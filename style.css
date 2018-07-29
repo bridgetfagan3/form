@@ -1,4 +1,10 @@
+input:focus {
+  border: 2px solid #365cf7;
+}
 
+.inputfield input:required {
+  background: red;
+}
 
 .navbar {
   font-family: 'Cinzel', serif;

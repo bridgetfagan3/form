@@ -12,39 +12,42 @@
 <body>
   <div class="navbar">This is a <span id="letterF">F</span><span id="letterO">O</span><span id="letterR">R</span><span id="letterM">M</span>.</div>
   <hr>
-  <div class="signupContainer">
-    <div class="signupItem">
-      <label for="fname" class="signupField">First Name</label>
-      <input type="text" class="inputField">
-    </div>
+  <form action="/my-handling-form-page" method="post">
+      <div class="signupContainer">
+        <div class="signupItem">
+          <label for="first-name" class="signupField" >First Name <abbr title="required">*</abbr></label>
+          <input type="text" class="inputField" name="first-name" autofocus>
+        </div>
 
-    <div class="signupItem">
-      <label for="lname" class="signupField">Last Name</label>
-      <input type="text" class="inputField">
-    </div>
+        <div class="signupItem">
+          <label for="last-name" class="signupField">Last Name </label>
+          <input type="text" class="inputField" name="last-name">
+          </label>
+        </div>
 
-    <div class="signupItem">
-      <label for="email" class="signupField">E-mail Address</label>
-      <input type="text" class="inputField">
-    </div>
+        <div class="signupItem">
+          <label for="email" class="signupField">E-mail Address <abbr title="required">*</abbr></label>
+          <input type="email" class="inputField" name"email" required>
+        </div>
 
-    <div class="signupItem">
-      <label for="password" class="signupField">Password</label>
-      <input type="password" class="inputField">
-    </div>
+        <div class="signupItem">
+          <label for="password" class="signupField">Password <abbr title="required">*</abbr></label>
+          <input type="password" class="inputField" name="password" required>
+        </div>
 
-    <div class="signupItem">
-      <label for="password" class="signupField">Re-Type Password</label>
-      <input type="password" class="inputField">
-    </div>
-    <div class="signupItem">
-      <input type="radio">
-      <label for="e-mail" class="signupRadio">Send me weekly study tips.</label>
-    </div>
-    <div class="signupItem">
-      <input type="submit" class="submitBox">
-    </div>
-  </div>
+        <div class="signupItem">
+          <label for="password" class="signupField">Re-Type Password</label>
+          <input type="password" class="inputField" name="re-entered-password" required>
+        </div>
+        <div class="signupItem">
+          <input type="radio" name="request-study-tips">
+          <label for="e-mail" class="signupRadio">Send me weekly study tips.</label>
+        </div>
+        <div class="signupItem">
+          <input type="submit" class="submitBox">
+        </div>
+      </div>
+  </form>
 
 
 </body>
